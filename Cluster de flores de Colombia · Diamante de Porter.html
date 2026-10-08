@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cluster de flores de Colombia · Diamante de Porter</title>
+<style>
+:root{--bg:#faf7f5;--fg:#201a1b;--muted:#6b5f61;--card:#fff;--line:#e4dadc;--accent:#b3263e;--accent-fg:#fff;--soft:#f6e6e9;--good:#2e6b4a;--bad:#a4322f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171213;--fg:#f1e9ea;--muted:#b3a5a8;--card:#221b1c;--line:#3a2f31;--accent:#e0566d;--accent-fg:#1a0d10;--soft:#34242a;--good:#7cc79d;--bad:#ef8b86}}
+:root[data-theme="dark"]{--bg:#171213;--fg:#f1e9ea;--muted:#b3a5a8;--card:#221b1c;--line:#3a2f31;--accent:#e0566d;--accent-fg:#1a0d10;--soft:#34242a;--good:#7cc79d;--bad:#ef8b86}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
+.wrap{max-width:860px;margin:0 auto;padding:20px 18px 48px}
+header{padding:18px 0 8px;border-bottom:2px solid var(--accent)}
+.kicker{font:600 12px/1.3 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(26px,6vw,38px);line-height:1.15;margin:8px 0}
+h2{font-size:22px;margin:36px 0 10px}
+.sub{color:var(--muted);font:14px/1.5 system-ui,sans-serif}
+.lead{font-size:17px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.kpi b{display:block;font:700 22px/1.2 system-ui,sans-serif;color:var(--accent)}
+.kpi span{font:13px/1.35 system-ui,sans-serif;color:var(--muted)}
+.tabs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:12px 0}
+.tab{font:600 14px/1.3 system-ui,sans-serif;padding:12px 10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);cursor:pointer;text-align:center}
+.tab[aria-selected="true"]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.panel h3{margin:0 0 6px;font-size:19px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:10px}
+.cols h4{margin:0 0 4px;font:700 13px/1.3 system-ui,sans-serif;letter-spacing:.05em;text-transform:uppercase}
+.ok h4{color:var(--good)}.ko h4{color:var(--bad)}
+ul{margin:0;padding-left:18px}li{margin:4px 0}
+.go{display:inline-block;margin-top:12px;font:600 14px/1 system-ui,sans-serif;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:2px}
+.strats{display:grid;gap:10px}
+.s{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:10px;padding:12px 14px}
+.s:target{background:var(--soft)}
+.s .tag{font:600 12px/1 system-ui,sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.s h3{margin:4px 0 4px;font-size:18px}
+.s p{margin:0}
+.concl{background:var(--soft);border-radius:12px;padding:14px 16px}
+footer{margin-top:30px;font:13px/1.5 system-ui,sans-serif;color:var(--muted)}
+footer li{margin:2px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="kicker">La gestión de lo público: de la burocracia al management · ADMI2801 · 2026-2</div>
+<h1>Cluster de flores cortadas de Colombia</h1>
+<div class="sub">Análisis con el diamante de Porter y cinco estrategias de fortalecimiento<br>Federico Constaín Otalora · 202423199 · Octubre de 2026</div>
+</header>
+
+<p class="lead">Colombia es el segundo exportador mundial de flores, detrás de Países Bajos, el país que Porter cita por sus institutos especializados en flores. El cluster se concentra en la Sabana de Bogotá y el oriente antioqueño. La pregunta es si su ventaja viene solo del clima o de factores creados.</p>
+
+<div class="kpis">
+<div class="kpi"><b>US$2.397 M</b><span>Exportaciones 2025 (+2,1% vs. 2024)</span></div>
+<div class="kpi"><b>240.000</b><span>Empleos formales directos e indirectos</span></div>
+<div class="kpi"><b>10.500 ha</b><span>16 empleos por hectárea (2024)</span></div>
+<div class="kpi"><b>97%</b><span>De la producción se exporta</span></div>
+<div class="kpi"><b>~80%</b><span>De las exportaciones va a EE. UU.</span></div>
+<div class="kpi"><b>~59%</b><span>De las flores frescas que importa EE. UU.</span></div>
+</div>
+<p class="sub">Cálculo propio†: unos US$228.000 de exportaciones por hectárea (US$2.397 M sobre 10.500 ha, mezclando datos de 2025 y 2024).</p>
+
+<h2>El diamante, atributo por atributo</h2>
+<p class="sub">Toca un atributo para ver cómo es hoy, sus debilidades y la estrategia asociada.</p>
+<div class="tabs" role="tablist" id="tabs"></div>
+<div class="panel" id="panel" role="tabpanel"></div>
+
+<h2>Cinco estrategias para fortalecer el cluster</h2>
+<div class="strats">
+<div class="s" id="e1"><div class="tag">1 · Condiciones de los factores</div><h3>Crear factores especializados</h3><p>Centro de excelencia con universidades y gremio para variedades, poscosecha y automatización, más programas técnicos propios del sector. Sube la productividad por trabajador y reduce la presión de los costos laborales.</p></div>
+<div class="s" id="e2"><div class="tag">2 · Condiciones de la demanda</div><h3>Diversificar hacia mercados exigentes</h3><p>Compradores de Europa, Asia y Medio Oriente, con estándares más estrictos, y flores premium, especiales y certificadas en sostenibilidad. Cumplen el papel de la demanda sofisticada de Porter y reducen la dependencia de EE. UU. y de las fechas pico.</p></div>
+<div class="s" id="e3"><div class="tag">3 · Industrias relacionadas y de apoyo</div><h3>Ampliar el cluster logístico y de insumos</h3><p>Desarrollar la ruta marítima y la cadena de frío para depender menos del avión, y atraer proveedores de agrotecnología, bioinsumos y empaques sostenibles que compitan globalmente, no proveedores «cautivos».</p></div>
+<div class="s" id="e4"><div class="tag">4 · Estrategia, estructura y rivalidad</div><h3>Estimular rivalidad e innovación</h3><p>Fomentar marcas propias, diferenciación y entrada de nuevos productores, con estándares exigentes de calidad y sostenibilidad. Evitar fusiones que reduzcan la competencia y ofrecer herramientas de cobertura cambiaria.</p></div>
+<div class="s" id="e5"><div class="tag">5 · Sistema y gobierno</div><h3>Gobernanza y política de largo plazo</h3><p>Reemplazar alivios de corto plazo por crédito de largo plazo para inversión tecnológica, mantener reglas estables, ampliar acuerdos comerciales y no intervenir en el tipo de cambio. Una mesa regional de productores, universidades, gobierno y operadores logísticos haría que los cuatro vértices se refuercen.</p></div>
+</div>
+
+<h2>Conclusión</h2>
+<div class="concl">Según Porter, el cluster es fuerte en factores especializados, industrias de apoyo y rivalidad, con un apoyo estatal coherente. Su punto débil es la demanda, que depende de un solo mercado externo, y su mayor vulnerabilidad es la macroeconomía: revaluación y costos laborales.</div>
+
+<footer>
+<p><b>Fuentes.</b> Cifras de Asocolflores y Analdex publicadas por la prensa económica:</p>
+<ul>
+<li>Portafolio: «Flores colombianas casi duplican exportaciones a EE. UU. en 14 años del acuerdo comercial»; «San Valentín, entre el auge exportador y las presiones»; «Floricultura pide oxígeno al Gobierno».</li>
+<li>Forbes Colombia: «Colombia exportó más de 300.000 toneladas en 2025».</li>
+<li>El Tiempo: «Floricultores colombianos se preparan para exportar 59.000 toneladas para el Día de la Madre».</li>
+<li>Porter, M. E. (2007). «La ventaja competitiva de las naciones». Harvard Business Review América Latina.</li>
+</ul>
+<p>† Interpretación o dato propio, no verificado en las fuentes consultadas.</p>
+</footer>
+</div>
+<script>
+var D=[
+{k:"Condiciones de los factores",
+ok:["Ventaja básica natural: altitud, luz ecuatorial y producción todo el año.","Factores especializados: mano de obra con experiencia en cultivo y poscosecha, cadena de frío y certificación fitosanitaria del ICA.","Centro de investigación del gremio (Ceniflores)†."],
+ko:["Una ventaja natural no sostiene la competitividad por sí sola (Porter).","El salario mínimo subió 23% en 2026, el mayor ajuste registrado; con 16 empleos por hectárea el golpe es mayor.","La investigación en variedades parece menos desarrollada que la de Países Bajos†."],e:1},
+{k:"Condiciones de la demanda",
+ok:["97% de la producción se exporta: no hay un mercado local que funcione como alerta temprana.","Cerca del 80% de las exportaciones va a EE. UU., donde Colombia aporta ~59% de las flores frescas importadas.","La exigencia viene de importadores y cadenas externas†."],
+ko:["Dependencia de un solo mercado ante cambios de aranceles o de acceso.","San Valentín y Día de la Madre concentran 15%–18% de las exportaciones anuales: picos de demanda y de presión logística."],e:2},
+{k:"Industrias relacionadas y de apoyo",
+ok:["Carga aérea y operadores aeroportuarios (Avianca Cargo, Opain).","Empaque, insumos agrícolas y servicios fitosanitarios (ICA).","Logística coordinada entre el sector y entidades públicas."],
+ko:["Dependencia del avión: en el Día de la Madre de 2025, US$367 M salieron por aire y US$65 M por mar.","Buena parte del material genético sería importado†."],e:3},
+{k:"Estrategia, estructura y rivalidad",
+ok:["Muchos productores concentrados en la Sabana de Bogotá y el oriente antioqueño†, lo que intensifica la rivalidad (Porter).","Gremio fuerte, Asocolflores, con 50 años; equivale a Assopiastrelle en el caso de Sassuolo.","Marca colectiva «Flores de Colombia»."],
+ko:["Competencia centrada en costos y volumen más que en diferenciación†.","El gremio pide créditos, garantías y alivios: poca capacidad de absorber choques cambiarios y de costos.","Pocas marcas de empresa; la marca es colectiva."],e:4},
+{k:"Gobierno",
+ok:["Plan Pétalo: coordina Mintransporte, Mincomercio, Minagricultura, Mindefensa, ICA, DIAN, Policía, Aerocivil y Armada.","Acuerdo comercial con EE. UU.: las exportaciones a ese mercado pasaron de US$966,7 M (2012) a cerca de US$1.900 M (2025).","Rol de catalizador indirecto, como recomienda Porter."],
+ko:["Los alivios de corto plazo pueden crear demanda por más ayuda (Porter).","Revaluación y costos laborales: Porter aconseja no intervenir en el tipo de cambio.","Falta un espacio regional estable de gobernanza del cluster†."],e:5}
+];
+var tabs=document.getElementById("tabs"),panel=document.getElementById("panel");
+function li(a){return "<ul>"+a.map(function(x){return "<li>"+x+"</li>"}).join("")+"</ul>"}
+function show(i){
+ var d=D[i];
+ Array.prototype.forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j===i?"true":"false")});
+ panel.innerHTML="<h3>"+d.k+"</h3><div class='cols'><div class='ok'><h4>Cómo es hoy</h4>"+li(d.ok)+"</div><div class='ko'><h4>Debilidades</h4>"+li(d.ko)+"</div></div><a class='go' href='#e"+d.e+"'>Ver estrategia "+d.e+" →</a>";
+}
+D.forEach(function(d,i){
+ var b=document.createElement("button");b.className="tab";b.setAttribute("role","tab");b.textContent=d.k;
+ b.onclick=function(){show(i)};tabs.appendChild(b);
+});
+show(0);
+</script>
+</body>
+</html>
